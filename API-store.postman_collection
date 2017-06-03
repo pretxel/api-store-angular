@@ -1,0 +1,267 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API-store",
+		"_postman_id": "b5734979-d3fb-6d39-607e-743a6c4e67d5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{HOST}/api/auth/login",
+			"request": {
+				"url": "{{HOST}}/api/auth/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "edsel@example.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "edsel",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{HOST}/api/",
+			"request": {
+				"url": "{{HOST}}/api",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTQ5NjQzMjE5OSwiZXhwIjoxNDk2NDM1Nzk5LCJuYmYiOjE0OTY0MzIxOTksImp0aSI6Imd6NmdWWnZycFV2Mmt5Y0QifQ.6L6_1QmmgquvyL9TyUhtndBOTj7DvkJuUx6rCVkj5Mc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "edsel@example.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "edsel",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{HOST}/api/auth/user",
+			"request": {
+				"url": "{{HOST}}/api/auth/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTQ5NjQzMjE5OSwiZXhwIjoxNDk2NDM1Nzk5LCJuYmYiOjE0OTY0MzIxOTksImp0aSI6Imd6NmdWWnZycFV2Mmt5Y0QifQ.6L6_1QmmgquvyL9TyUhtndBOTj7DvkJuUx6rCVkj5Mc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "edsel@example.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "edsel",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{HOST}/api/product",
+			"request": {
+				"url": "{{HOST}}/api/auth/product",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTQ5NjQzNjM2NywiZXhwIjoxNDk2NDM5OTY3LCJuYmYiOjE0OTY0MzYzNjcsImp0aSI6InA0UkRQY0NUWTJXTERBZ08ifQ.iuN02PGlWQgcuQrMhp5K89MEkcQoerIK8dg_RKYRXN0",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "1M002",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Tostadora",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Tostadora Electronica",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "active",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1500",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{HOST}/api/product",
+			"request": {
+				"url": "{{HOST}}/api/product/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTQ5NjQzNjM2NywiZXhwIjoxNDk2NDM5OTY3LCJuYmYiOjE0OTY0MzYzNjcsImp0aSI6InA0UkRQY0NUWTJXTERBZ08ifQ.iuN02PGlWQgcuQrMhp5K89MEkcQoerIK8dg_RKYRXN0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "sku",
+							"value": "111",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Tostadora Vieja",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Tostadora",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "active",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{HOST}/api/product",
+			"request": {
+				"url": "{{HOST}}/api/product/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTQ5NjQzNjM2NywiZXhwIjoxNDk2NDM5OTY3LCJuYmYiOjE0OTY0MzYzNjcsImp0aSI6InA0UkRQY0NUWTJXTERBZ08ifQ.iuN02PGlWQgcuQrMhp5K89MEkcQoerIK8dg_RKYRXN0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{HOST}/api/product",
+			"request": {
+				"url": "{{HOST}}/api/products",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTQ5NjQzNjM2NywiZXhwIjoxNDk2NDM5OTY3LCJuYmYiOjE0OTY0MzYzNjcsImp0aSI6InA0UkRQY0NUWTJXTERBZ08ifQ.iuN02PGlWQgcuQrMhp5K89MEkcQoerIK8dg_RKYRXN0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
